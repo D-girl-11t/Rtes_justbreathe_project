@@ -36,14 +36,11 @@ GND of STM32  => one of the pin of the sensor
 VCC of STM32  => other pin of the sensor
 
 2. The Code - We wrote Cpp code that allows the STM32 microcontroller to receive data, in this case, it is the  voltage difference caused by pressure variations acting on the sensor.
-3. The thin flim pressure sensor is fitted around the diaphragm of the body of the observation. When the infant breathes in and out, the resistance across the sensor
-
+3. The thin flim pressure sensor is fitted around the diaphragm of the body of the observation. When the infant breathes in and out, the resistance across the sensor 
 varies, causing a pressure difference. This pressure difference is transferred to electrical impulses which generates corresponding voltage difference.
 
 4. The diaphragm expands while inhaling and contracts while exhaling. A threshold of 2.1 V is kept to avoid the needless pressure difference which was found during inhaling and exhaling. While the infant exhales, the voltage difference is less than 2.1 V, but it surpasses 2.1 V when inhaling.
-4. Alert - If the infant is breathing normally , (inhaling and exhaling regularly), then the screen on the STM32 board indicates "Baby is safe".
-
-Upon 10 seconds of no inhaling , the LCD on the microcontroller shows "Baby in danger".
+4. Alert - If the infant is breathing normally , (inhaling and exhaling regularly), then the screen on the STM32 board indicates "Baby is safe". Upon 10 seconds of no inhaling , the LCD on the microcontroller shows "Baby in danger".
 
 **Results and Conclusion :**
 
